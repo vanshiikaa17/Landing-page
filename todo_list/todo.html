@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To-do list</title>
+    <link rel="stylesheet" href="../todo_list/todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://www.freepik.com/photos/wood-background" class="cred"
+        >Wood background photo by- www.freepik.com</a
+      >
+    </div>
+    <div class="lp">
+      <a href="../home.html" class="lp1">Back</a>
+    </div>
+    <div class="heading">
+      <h2>TO-DO LIST</h2>
+    </div>
+    <div class="input_items">
+      <input type="text" class="txt" placeholder="Enter task to the list" />
+      <button class="btn">
+        <i class="bi bi-plus-lg" style="font-size: 1.4rem"></i>
+      </button>
+      <div class="select">
+        <select name="todos" id="options">
+          <option value="all">All tasks</option>
+          <option value="completed">Completed tasks</option>
+          <option value="pending">Pending tasks</option>
+        </select>
+      </div>
+    </div>
+    <div class="list">
+      <ul class="list_items"></ul>
+    </div>
+
+    <script src="../todo_list/todo.js"></script>
+  </body>
+</html>

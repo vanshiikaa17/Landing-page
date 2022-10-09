@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: linear-gradient(-90deg, rgb(228, 121, 58), rgb(235, 194, 156),rgb(233, 152, 105)); */
+    background: url(../bg.jpg) no-repeat center center/cover ;
+    background-color: black;
+
+}
+.cred{
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+
+}
+.lp{
+    margin: 1.2rem;
+   
+}
+.lp1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(74, 72, 72);
+    text-decoration: none;
+}
+.lp1:hover{
+    color: rgb(116, 113, 113);
+
+    text-decoration: underline;
+}
+.cred:hover{
+    color: bisque;
+    text-decoration: underline;
+}
+.header{
+    padding: 0.8rem;
+
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem;
+}
+
+.heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.65rem;
+}
+
+.input_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.2rem;
+
+}
+
+.txt {
+    width: 31.6%;
+    margin: 0.6rem 0rem;
+    font-size: 1.1rem;
+    border: none;
+    padding: 1rem;
+
+}
+
+.btn {
+    margin: 0.6rem 0rem;
+    width: 4.2%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    border: none;
+    padding: 0.82rem;
+    text-align: center;
+    color:rgb(218, 87, 12);
+}
+
+.btn:hover {
+    background-color: rgb(77, 74, 74);
+    color: white;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 4.2rem;
+    margin: 2rem;
+}
+.list_items{
+    list-style: none;
+    min-width: 56%;
+
+}
+.todo{
+    display: flex;
+    background-color: white;
+    /* padding: 0.8rem; */
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    margin: 1rem;
+
+}
+.todo li{
+    flex: 1;
+    padding: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.completed, .del{
+    padding: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    color: white;
+
+}
+.completed{
+    background-color: green;
+}
+.del{
+    background-color: red;
+}
+.completed:hover, .del:hover{
+    background-color: rgb(77, 74, 74);
+    color: white;
+}
+.comp{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(10deg);
+    opacity: 0;
+}
+
+select{
+    appearance: none;
+    border: none;
+}
+.select{
+  position: relative;
+    margin: 0.6rem;
+    overflow: hidden;
+}
+
+select{
+    width: 12rem;
+    height: 3.22rem;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    /* height: 4.2rem; */
+
+}
+.select::after{
+    content: "\25BC";  
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background-color:  rgb(255, 255, 255);
+    color:rgb(218, 87, 12);
+
+    pointer-events: none;
+    transition: all 0.35s ease;
+
+}
+.select:hover::after{
+    background-color: rgb(77, 74, 74);
+    color: white;
+
+}
+@media screen and (max-width:800px){
+    .txt {
+        
+        height: 2.2rem;
+        width: 50%;
+    }
+    .btn{
+        height: 2.2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .list_items{
+        min-width: 90%;
+    }
+    select{
+        height: 2rem;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+
+    }
+.select::after{
+    margin: 0;
+    position: relative;
+}
+}
